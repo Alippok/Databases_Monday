@@ -125,3 +125,24 @@ fringe_shows=# select * from shows;
 (12 rows)
 
 ======================
+
+==========section2.1
+➜  Homework git:(master) ✗ psql -d fringe_shows -f select_names_prices.sql
+
+                  name                   | price 
+-----------------------------------------+-------
+ Best of Burlesque                       |  7.99
+ Two become One                          |  8.50
+ Urinetown                               |  8.50
+ Paul Dabek Mischief                     | 12.99
+ Le Haggis                               | 12.99
+ Game of Thrones - The Musical           | 16.50
+ Joe Stilgoe: Songs on Film – The Sequel | 16.50
+ Shitfaced Shakespeare                   | 16.50
+ Aaabeduation – A Magic Show             | 17.99
+ Camille O'Sullivan                      | 17.99
+ Balletronics                            | 32.00
+ Edinburgh Royal Tattoo                  | 32.99
+(12 rows)
+
+===============
