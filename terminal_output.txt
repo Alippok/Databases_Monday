@@ -167,3 +167,14 @@ fringe_shows=# select * from shows;
 
 
 ================section2.4
+➜  Homework git:(master) ✗ psql -d fringe_shows -f section_2_scripts.sql
+  sum   
+--------
+ 201.44
+(1 row)
+
+=========================
+
+
+===============section2.5
+
