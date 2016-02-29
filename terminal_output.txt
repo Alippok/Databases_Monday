@@ -1,0 +1,48 @@
+➜  Homework git:(master) psql
+psql (9.4.5)
+Type "help" for help.
+
+user=# \c fringe_shows
+You are now connected to database "fringe_shows" as user "user".
+fringe_shows=# insert into users (name) values ('Val Gibson');
+INSERT 0 1
+fringe_shows=# select * from users
+fringe_shows-# ;
+ id |     name      
+----+---------------
+  1 | Rick Henri
+  2 | Jay Chetty
+  3 | Keith Douglas
+  4 | Marc Dinardo
+  5 | Val Gibson
+(5 rows)
+
+fringe_shows=# select * shows_users
+fringe_shows-# ;
+ERROR:  syntax error at or near "shows_users"
+LINE 1: select * shows_users
+                 ^
+fringe_shows=# select * from shows_users                                        ;
+ id | show_id | user_id 
+----+---------+---------
+  1 |       1 |       1
+  2 |       1 |       2
+(2 rows)
+
+fringe_shows=# select * from shows
+fringe_shows-# ;
+fringe_shows=# insert into users_shows (show_id, user_id) values (5,12);
+ERROR:  relation "users_shows" does not exist
+LINE 1: insert into users_shows (show_id, user_id) values (5,12);
+                    ^
+fringe_shows=# insert into shows_users (show_id, user_id) values (5,12);
+INSERT 0 1
+fringe_shows=# select * from shows_users;
+ id | show_id | user_id 
+----+---------+---------
+  1 |       1 |       1
+  2 |       1 |       2
+  3 |       5 |      12
+(3 rows)
+
+fringe_shows=# 
