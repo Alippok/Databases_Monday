@@ -1,0 +1,13 @@
+INSERT INTO "times" (time, show_id) VALUES ('13:30', 1);
+INSERT INTO "times" (time, show_id) VALUES ('19:30', 2);
+INSERT INTO "times" (time, show_id) VALUES ('17:15', 3);
+INSERT INTO "times" (time, show_id) VALUES ('19:30', 4);
+INSERT INTO "times" (time, show_id) VALUES ('12:45', 5);
+INSERT INTO "times" (time, show_id) VALUES ('17:15', 6);
+INSERT INTO "times" (time, show_id) VALUES ('12:45', 7);
+INSERT INTO "times" (time, show_id) VALUES ('22:00', 8);
+INSERT INTO "times" (time, show_id) VALUES ('19:30', 9);
+INSERT INTO "times" (time, show_id) VALUES ('14:15', 10);
+INSERT INTO "times" (time, show_id) VALUES ('20:00', 11);
+INSERT INTO "times" (time, show_id) VALUES ('12:45', 12);
+INSERT INTO "times" (time, show_id) VALUES ('20:00', 13);

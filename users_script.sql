@@ -1,0 +1,1 @@
+INSERT INTO "users" (name) VALUES ('Rick Henri'), ('Jay Chetty'), ('Keith Douglas'), ('Marc Dinardo');
