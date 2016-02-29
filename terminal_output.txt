@@ -46,3 +46,32 @@ fringe_shows=# select * from shows_users;
 (3 rows)
 
 fringe_shows=# 
+
+
+
+========section1.6
+psql (9.4.5)
+Type "help" for help.
+
+user=# \c fringe_shows
+You are now connected to database "fringe_shows" as user "user".
+fringe_shows=# update users name = 'Valerie Gibson' where name = 'Val Gibson';
+ERROR:  syntax error at or near "="
+LINE 1: update users name = 'Valerie Gibson' where name = 'Val Gibso...
+                          ^
+fringe_shows=# update users set name='Valerie Gibson' where name='Val Gibson'; 
+UPDATE 1
+fringe_shows=# select * from users;
+ id |      name      
+----+----------------
+  1 | Rick Henri
+  2 | Jay Chetty
+  3 | Keith Douglas
+  4 | Marc Dinardo
+  5 | Valerie Gibson
+(5 rows)
+
+fringe_shows=# 
+
+========================
+
