@@ -146,3 +146,15 @@ fringe_shows=# select * from shows;
 (12 rows)
 
 ===============
+
+=========section2.2
+➜  Homework git:(master) psql -d fringe_shows -f section_2_scripts.sql 
+         avg         
+---------------------
+ 16.7866666666666667
+(1 row)
+
+===================
+
+
+================section2.3
