@@ -5,4 +5,7 @@
 
 -- SELECT MIN (price) FROM shows;
 
-SELECT SUM (price) FROM shows;
+-- SELECT SUM (price) FROM shows;
+
+SELECT SUM (price) FROM shows
+where shows.price < 20;
