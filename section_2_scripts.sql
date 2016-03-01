@@ -7,5 +7,10 @@
 
 -- SELECT SUM (price) FROM shows;
 
-SELECT SUM (price) FROM shows
-where shows.price < 20;
+-- SELECT SUM (price) FROM shows
+-- where shows.price < 20;
+
+SELECT name, price
+FROM shows
+where price = (select MAX(price) FROM shows);
+

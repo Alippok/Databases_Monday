@@ -185,3 +185,7 @@ fringe_shows=# select * from shows;
 =========================
 
 ===============section2.6
+          name          | price 
+------------------------+-------
+ Edinburgh Royal Tattoo | 32.99
+(1 row)
